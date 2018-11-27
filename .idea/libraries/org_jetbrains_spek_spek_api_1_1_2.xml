@@ -3,9 +3,6 @@
     <properties maven-id="org.jetbrains.spek:spek-api:1.1.2" />
     <CLASSES>
       <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/spek/spek-api/1.1.2/spek-api-1.1.2.jar!/" />
-      <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-reflect/1.0.6/kotlin-reflect-1.0.6.jar!/" />
-      <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-stdlib/1.0.6/kotlin-stdlib.jar!/" />
-      <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/spek/spek-api/1.1.2/spek-api-1.1.2.jar!/" />
       <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-stdlib/1.0.6/kotlin-stdlib-1.0.6.jar!/" />
       <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-runtime/1.0.6/kotlin-runtime-1.0.6.jar!/" />
       <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-reflect/1.0.6/kotlin-reflect-1.0.6.jar!/" />

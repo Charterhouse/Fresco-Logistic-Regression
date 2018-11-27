@@ -3,8 +3,6 @@
     <properties maven-id="com.winterbe:expekt:0.5.0" />
     <CLASSES>
       <root url="jar://$MAVEN_REPOSITORY$/com/winterbe/expekt/0.5.0/expekt-0.5.0.jar!/" />
-      <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-stdlib/1.0.3/kotlin-stdlib.jar!/" />
-      <root url="jar://$MAVEN_REPOSITORY$/com/winterbe/expekt/0.5.0/expekt-0.5.0.jar!/" />
       <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-stdlib/1.0.3/kotlin-stdlib-1.0.3.jar!/" />
       <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-runtime/1.0.3/kotlin-runtime-1.0.3.jar!/" />
     </CLASSES>
