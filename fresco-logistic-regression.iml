@@ -16,6 +16,6 @@
     <orderEntry type="library" name="org.junit.platform:junit-platform-commons:1.0.0-M4" level="project" />
     <orderEntry type="library" name="com.winterbe:expekt:0.5.0" level="project" />
     <orderEntry type="module" module-name="core" />
-    <orderEntry type="library" name="org.mockito:mockito-inline:2.8.47" level="project" />
+    <orderEntry type="library" name="org.mockito:mockito-core:2.23.4" level="project" />
   </component>
 </module>
