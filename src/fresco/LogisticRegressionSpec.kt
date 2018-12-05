@@ -1,14 +1,33 @@
 package fresco
 
 import com.winterbe.expekt.expect
+import fresco.dsl.KnownFixedPoint
 import fresco.dsl.evaluate
+import fresco.dsl.matrices.Matrix
 import fresco.dsl.matrices.Vector
-import fresco.dsl.matrices.matrixFromVectors
+import fresco.dsl.matrices.times
 import org.jetbrains.spek.api.Spek
 import org.jetbrains.spek.api.dsl.it
 
 class LogisticRegressionSpec: Spek({
     val logistic = LogisticRegression()
+
+    it("updates learned model using previous value and first derivative") {
+        val X = Matrix(
+                arrayOf(KnownFixedPoint(1.0), KnownFixedPoint(2.0)),
+                arrayOf(KnownFixedPoint(3.0), KnownFixedPoint(4.0))
+        )
+        val H = logistic.hessian(X)
+        val L = logistic.choleskyDecomposition(-1.0 * H)
+        val l = Vector(7.0, 8.0)
+        var beta = Vector(5.0, 6.0)
+
+        beta = logistic.updateLearnedModel(L, beta, l)
+
+        val result = evaluate(beta)
+        val expected = plain.Vector(33.0, -12.0)
+        expect(result.isCloseTo(expected, 0.01)).to.be.`true`
+    }
 
     it("computes best beta for logistic regression with non-zero lambda") {
         val intercept = 1.65707
